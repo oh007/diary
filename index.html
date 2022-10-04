@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fav icon -->
+  <link rel="icon" type="image/x-icon" href="Bilder/favicon-32x32.png">
+
+
+   
+    <title>Dagboken</title>
+    <!-- Bootstrap Scrips -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    
+    </style>
+    
+</head>
+
+<body>
+  <nav class="navbar1 navbar-expand-lg navbar-light center" style="background-color: #ffff;margin-left: 245px; margin-bottom: 25px;">
+    <div class="container-fluid">
+     
+      <a class="navbar-brand " href="index.html"> <img src="Bilder/Dagboken.png" alt="siteIcon" width="150" height="150"> </a>
+      </div>
+    </div>
+  </nav>
+  <br>
+    <h1 style="text-align: center;">Skriv ett inlägg!</h1>
+    <br>
+<form id="test">
+      <div class="mb-3 text-center shadow p-3 mb-5 bg-body rounded" >
+        <label for="titleFromUser" class="form-label">Titel:</label>
+        <input type="text" class="form-control text-center" id="titleFromUser">
+      </div>
+
+      
+      <div class="mb-3 text-center shadow p-3 mb-5 bg-body rounded ">
+        <label for="postFromUser" class="form-label">Inlägg</label>
+        <input type="hejsan" class="form-control text-center" id="postFromUser">
+      </div>
+     
+    </form>
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col">
+        
+        </div>
+        <div class="col ">
+          <div id="liveAlertPlaceholder"></div>
+          <button type="button" class="btn btn-light" onclick="savePost();" id="liveAlertBtn">Spara</button>
+        </div>
+        <div class="col">
+     
+        </div>
+      </div>
+  
+<br>
+
+<h2>Senaste inlägget:</h2>
+
+    <div>
+
+      <ul class="list-group">
+       
+
+      
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col text-center" id="savedTxt">
+            <li class="list-group-item" id="savedTitle"></li>
+            <li class="list-group-item" id="savedPost"></li>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <br>
+    <!-- footer -->
+
+    <footer id="footer" class="bg--light" style="background-color: #00c2cb text-white  text-center">
+      <hr class="mt-0">
+      <!--Social buttons-->
+      <div class="text-center">
+          <ul class="list-unstyled list-inline">
+          <li class="list-inline-item">
+            <a href="https://github.com/oh007" class="sbtn btn-large mx-1" title="Github">
+              <img src="Bilder/GitHub-Mark-Light-64px.png" alt="">
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/olof-hag-a477aa180/" class="sbtn btn-large mx-1" title="Linkedin">
+              <img src="Bilder/linkedin-3-64.png" alt="">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--/.Social buttons-->
+      <!--Copyright-->
+      <div class="py-3 text-center">
+        Site made by Olof Hag.
+      </div>
+      <!--/.Copyright-->
+    </footer>
+    <h5 class="resize"><i class="fas fa-angle-double-left"></i><i class="fas fa-angle-double-right"></i>
+    
+
+    <script src="dagbokenKopia.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
